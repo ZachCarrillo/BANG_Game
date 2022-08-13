@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: navajowhite;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BANG.GameController">
+   <top>
+      <BorderPane prefHeight="72.0" prefWidth="600.0" style="-fx-background-image: url(/assets/bottomBackground.jpg);" BorderPane.alignment="CENTER">
+         <center>
+            <ImageView fitHeight="72.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../assets/pngwing.com.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+   </top>
+   <bottom>
+      <BorderPane prefHeight="72.0" prefWidth="600.0" style="-fx-background-image: url(/assets/bottomBackground.jpg);" BorderPane.alignment="CENTER">
+         <center>
+            <Button fx:id="endButton" disable="true" mnemonicParsing="false" onAction="#playAI" text="End Turn" BorderPane.alignment="CENTER" />
+         </center></BorderPane>
+   </bottom>
+   <right>
+      <ScrollPane prefHeight="383.0" prefWidth="200.0" style="-fx-background-color: navajowhite;" BorderPane.alignment="CENTER">
+         <content>
+            <VBox prefHeight="520.0" prefWidth="185.0" style="-fx-background-color: navajowhite;">
+               <children>
+                  <AnchorPane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: navajowhite;">
+                     <children>
+                        <ImageView fx:id="pic1" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../james.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="playerButton" layoutX="133.0" layoutY="18.0" mnemonicParsing="false" onAction="#doAction" text="Select" visible="false" />
+                        <Label fx:id="p1Stats" layoutY="49.0" prefHeight="20.0" prefWidth="181.0" text="HP: Arrows: Role:" />
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="5.0" prefWidth="200.0" style="-fx-background-color: black;" />
+                  <AnchorPane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: navajowhite;">
+                     <children>
+                        <ImageView fx:id="pic2" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../james.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="ai1" layoutX="133.0" layoutY="18.0" mnemonicParsing="false" onAction="#doAction" text="Select" visible="false" />
+                        <Label fx:id="p2Stats" layoutX="1.0" layoutY="50.0" prefHeight="20.0" prefWidth="185.0" text="HP: Arrows: Role:" />
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="5.0" prefWidth="200.0" style="-fx-background-color: black;" />
+                  <AnchorPane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: navajowhite;">
+                     <children>
+                        <ImageView fx:id="pic3" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../james.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="ai2" layoutX="133.0" layoutY="18.0" mnemonicParsing="false" onAction="#doAction" text="Select" visible="false" />
+                        <Label fx:id="p3Stats" layoutX="1.0" layoutY="54.0" prefHeight="20.0" prefWidth="185.0" text="HP: Arrows: Role:" />
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="5.0" prefWidth="200.0" style="-fx-background-color: black;" />
+                  <AnchorPane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: navajowhite;">
+                     <children>
+                        <ImageView fx:id="pic4" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../james.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="ai3" layoutX="133.0" layoutY="18.0" mnemonicParsing="false" onAction="#doAction" text="Select" visible="false" />
+                        <Label fx:id="p4Stats" layoutX="-4.0" layoutY="52.0" prefHeight="20.0" prefWidth="185.0" text="HP: Arrows: Role:" />
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="5.0" prefWidth="200.0" style="-fx-background-color: black;" />
+                  <AnchorPane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: navajowhite;">
+                     <children>
+                        <ImageView fx:id="pic5" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../james.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="ai4" layoutX="133.0" layoutY="18.0" mnemonicParsing="false" onAction="#doAction" text="Select" visible="false" />
+                        <Label fx:id="p5Stats" layoutX="1.0" layoutY="51.0" prefHeight="20.0" prefWidth="185.0" text="HP: Arrows: Role:" />
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="5.0" prefWidth="200.0" style="-fx-background-color: black;" />
+                  <AnchorPane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: navajowhite;">
+                     <children>
+                        <ImageView fx:id="pic6" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../james.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="ai5" layoutX="133.0" layoutY="18.0" mnemonicParsing="false" onAction="#doAction" text="Select" visible="false" />
+                        <Label fx:id="p6Stats" layoutX="1.0" layoutY="54.0" prefHeight="20.0" prefWidth="185.0" text="HP: Arrows: Role:" />
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="5.0" prefWidth="200.0" style="-fx-background-color: black;" />
+                  <AnchorPane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: navajowhite;">
+                     <children>
+                        <ImageView fx:id="pic7" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../james.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="ai6" layoutX="133.0" layoutY="18.0" mnemonicParsing="false" onAction="#doAction" text="Select" visible="false" />
+                        <Label fx:id="p7Stats" layoutX="1.0" layoutY="48.0" prefHeight="20.0" prefWidth="185.0" text="HP: Arrows: Role:" />
+                     </children></AnchorPane>
+                  <AnchorPane prefHeight="5.0" prefWidth="200.0" style="-fx-background-color: black;" />
+                  <AnchorPane prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: navajowhite;">
+                     <children>
+                        <ImageView fx:id="pic8" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../james.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="ai7" layoutX="133.0" layoutY="18.0" mnemonicParsing="false" onAction="#doAction" text="Select" visible="false" />
+                        <Label fx:id="p8Stats" layoutX="1.0" layoutY="53.0" prefHeight="20.0" prefWidth="185.0" text="HP: Arrows: Role:" />
+                     </children></AnchorPane>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </right>
+   <left>
+      <VBox prefHeight="293.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="diceChooser" onAction="#setDice" prefHeight="25.0" prefWidth="153.0" promptText="Choose your dice" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="dice1" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/stormtrooper/Downloads/gorilla.gif" />
+                     </image>
+                  </ImageView>
+                  <RadioButton mnemonicParsing="false" onAction="#disableDice1" text="Dont Roll" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="dice2" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/stormtrooper/Downloads/gorilla.gif" />
+                     </image></ImageView>
+                  <RadioButton mnemonicParsing="false" onAction="#disableDice2" text="Dont Roll" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="dice3" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/stormtrooper/Downloads/gorilla.gif" />
+                     </image></ImageView>
+                  <RadioButton mnemonicParsing="false" onAction="#disableDice3" text="Dont Roll" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="dice4" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/stormtrooper/Downloads/gorilla.gif" />
+                     </image></ImageView>
+                  <RadioButton mnemonicParsing="false" onAction="#disableDice4" text="Dont Roll" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="dice5" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/stormtrooper/Downloads/gorilla.gif" />
+                     </image></ImageView>
+                  <RadioButton mnemonicParsing="false" onAction="#disableDice5" text="Dont Roll" />
+               </children>
+            </HBox>
+            <Button fx:id="rollButton" mnemonicParsing="false" onAction="#rollDice" prefHeight="43.0" prefWidth="153.0" text="Roll Dice" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <Label prefHeight="54.0" prefWidth="205.0" text="What Action Would You Like To Take?" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <ComboBox fx:id="playerChoice" onAction="#playerActionChoice" prefWidth="150.0" BorderPane.alignment="TOP_CENTER" />
+         </center>
+         <bottom>
+            <Label fx:id="end" alignment="CENTER" prefHeight="119.0" prefWidth="248.0" style="-fx-font-size: 20; -fx-font-weight: bold;" text="Label" textAlignment="CENTER" textFill="#d31414" visible="false" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </center>
+</BorderPane>
